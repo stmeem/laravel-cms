@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-//---------Dashboard---------//
 
+//---------Dashboard---------//
 Route::middleware(['auth'])->group(function () {
-    Route::get('/','DashboardController@index')->name('dashboard');
+    Route::get('/', 'DashboardController@index')->name('dashboard');
     Route::get('logout', "DashboardController@logout")->name('logout');
+    Route::resource('/article','ArticleController');
 });

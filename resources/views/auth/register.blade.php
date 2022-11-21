@@ -4,10 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+            <div class="card login-card">
+                <div class="card-body mt-4">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -63,9 +61,20 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn bg-sidebar text-white">
                                     {{ __('Register') }}
                                 </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-8 offset-md-4 mt-2">
+                               Already have an account?
+                                @if(Route::has('login'))
+                                    <a class="text-sidebar" href="{{ route('login') }}">
+                                        Login
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     </form>
