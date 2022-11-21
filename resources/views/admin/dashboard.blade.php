@@ -66,7 +66,7 @@
         <div id="content">
 
             <!-- Top bar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light topbar mb-4">
 
                 <!-- Sidebar Toggle -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -108,7 +108,9 @@
         <footer class="sticky-footer">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>stmeem</span>
+                    <span>
+                        <p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> stmeem 🤡 </p>
+                    </span>
                 </div>
             </div>
         </footer>

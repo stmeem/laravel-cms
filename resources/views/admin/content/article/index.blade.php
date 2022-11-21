@@ -28,7 +28,7 @@
                 <td>{{ $id += 1 }}</td>
                 <td>{!! $article->title !!}</td>
                 <td>{!! \Illuminate\Support\Str::limit($article->content, 20, '...') !!}</td>
-                <td><img src="{{ asset('storage/'.$article->image) }}" alt="" style="width: 100px"></td>
+                <td><img src="{{ asset('/storage/'.$article->image) }}" alt="" style="width: 100px"></td>
                 <td>{!! $article->tag !!}</td>
 
                 <td><a href="{{ route('article.edit',$article->id) }}" class="btn bg-sidebar text-white">Update</a></td>
