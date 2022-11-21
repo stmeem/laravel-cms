@@ -53,6 +53,7 @@ Content Management System developed with Laravel framework.
    npm install
    npm run dev
    ```
-Finally, run ```php artisan serve ```
+   
+Finally, run ```php artisan serve ```.
 
-Go to http://localhost:8000/!
+To view the project, open [http://localhost:8000](http://localhost:8000).
