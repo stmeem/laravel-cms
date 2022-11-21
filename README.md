@@ -16,15 +16,15 @@ Content Management System developed with Laravel framework.
 1. Clone the project
 
    ```
-   git clone https://github.com/stmeem/laravel-cms.git cms
+   git clone https://github.com/stmeem/laravel-cms.git laravel-cms
    ```
 
 2. Create an empty MySQL database
 
-3. Enter the newly created folder
+3. Go to the folder application using cd command on your cmd or terminal
 
    ```
-   cd cms
+   cd laravel-cms
    ```
    
 4. Install dependencies with [Composer](https://getcomposer.org/doc/00-intro.md)
